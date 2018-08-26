@@ -42,10 +42,6 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(array) {
-  var i = array.lenth;
-  function incrementVariable() {
-    i--;
-  }
   do {
     array.pop();
   } while (array.length > 0 && incrementVariable());
