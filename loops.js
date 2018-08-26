@@ -42,11 +42,12 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(array) {
-  let i = 0;
+  var i = array.lenth;
   function incrementVariable() {
     i++;
   }
   do {
-    delete array[array.length];
+    delete array[array.length - 1];
   } while (array.length > 0 && incrementVariable());
+  return array;
 }
