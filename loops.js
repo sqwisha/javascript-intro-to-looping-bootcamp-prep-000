@@ -1,4 +1,4 @@
-/* My first solution is less verbose and achieves the desired result, but I get the error:
+/* My first solution is less verbose and achieves the desired result, but I get this error:
 1) loops
        forLoop(array)
          adds `"I am ${i} strange loop${i === 0 ? '' : 's'}."` to an array 25 times:
@@ -31,4 +31,12 @@ function forLoop(array) {
      }
   }
   return array;
+}
+
+function whileLoop(n) {
+  let countdown = n;
+  while (countdown > 0) {
+    console.log(--countdown);
+  }
+  return `done`;
 }
