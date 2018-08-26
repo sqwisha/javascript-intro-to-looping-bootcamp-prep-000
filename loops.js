@@ -47,6 +47,6 @@ function doWhileLoop(array) {
     i++;
   }
   do {
-    array.pop();
+    delete array[array.length];
   } while (array.length > 0 && incrementVariable());
 }
