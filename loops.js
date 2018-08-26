@@ -44,7 +44,7 @@ function whileLoop(n) {
 function doWhileLoop(array) {
   var i = array.lenth;
   function incrementVariable() {
-    i++;
+    i--;
   }
   do {
     delete array[array.length - 1];
